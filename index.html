@@ -1,13 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="A calculator web app that can perform basic mathematical operations.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Calculator</title>
+	<meta charset='UTF-8'>
+	<meta name='description' content='A calculator web app that can perform basic mathematical operations.'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='src/styles/index.css'>
+	<title>Simple Calculator</title>
 </head>
 <body>
-    <p>Hello World!</p>
-    <p>Bundled with Parcel</p>
+	<main class='container'>
+		<section class='calculator'>
+			<div class='calculator__screen-container'>
+				<span id='screen' class='calculator__screen'></span>
+			</div>
+			<div class='calculator__controls-container'>
+				<button id='control_clean' type='button' class='calculator__control calculator__control--double'>
+					<label for='control_clean'>C</label>
+				</button>
+				<button id='control_back' type='button' class='calculator__control'>
+					<label for='control_back'>⇦</label>
+				</button>
+				<button id='control_division' type='button' class='calculator__control'>
+					<label for='control_division'>/</label>
+				</button>
+				<button id='control_nine' type='button' class='calculator__control'>
+					<label for='control_nine'>9</label>
+				</button>
+				<button id='control_eight' type='button' class='calculator__control'>
+					<label for='control_eight'>8</label>
+				</button>
+				<button id='control_seven' type='button' class='calculator__control'>
+					<label for='control_seven'>7</label>
+				</button>
+				<button id='control_multiplication' type='button' class='calculator__control'>
+					<label for='control_multiplication'>*</label>
+				</button>
+				<button id='control_six' type='button' class='calculator__control'>
+					<label for='control_six'>6</label>
+				</button>
+				<button id='control_five' type='button' class='calculator__control'>
+					<label for='control_five'>5</label>
+				</button>
+				<button id='control_four' type='button' class='calculator__control'>
+					<label for='control_four'>4</label>
+				</button>
+				<button id='control_subtraction' type='button' class='calculator__control'>
+					<label for='control_subtraction'>-</label>
+				</button>
+				<button id='control_three' type='button' class='calculator__control'>
+					<label for='control_three'>3</label>
+				</button>
+				<button id='control_two' type='button' class='calculator__control'>
+					<label for='control_two'>2</label>
+				</button>
+				<button id='control_one' type='button' class='calculator__control'>
+					<label for='control_one'>1</label>
+				</button>
+				<button id='control_addition' type='button' class='calculator__control'>
+					<label for='control_addition'>+</label>
+				</button>
+				<button id='control_zero' type='button' class='calculator__control'>
+					<label for='control_zero'>0</label>
+				</button>
+				<button id='control_comma' type='button' class='calculator__control'>
+					<label for='control_comma'>.</label>
+				</button>
+				<button id='control_result' type='button' class='calculator__control calculator__control--double'>
+					<label for='control_result'>=</label>
+				</button>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
