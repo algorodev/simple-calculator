@@ -42,13 +42,23 @@
 	transition: 300ms background-color;
 }
 
-.calculator__control:hover,
-.calculator__control:focus {
+.calculator__control:hover {
 	background-color: var(--darkgrey-color);
+}
+
+@media only screen and (max-width: 1024px) {
+	.calculator__control:focus {
+		background-color: var(--darkgrey-color);
+	}
 }
 
 .calculator__control--double {
 	grid-column: span 2;
+}
+
+.calculator__control--disabled {
+	pointer-events: none;
+	background-color: var(--lightgrey-color);
 }
 
 .calculator__control-label {
